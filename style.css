@@ -1,0 +1,130 @@
+html {
+  background: black url(colors.jpg) center center no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: block;
+  place-items: center;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+@media (min-width: 500px) {
+  body {
+    display: grid;
+  }
+}
+
+.container {
+  width: 90%;
+  background: rgb(79, 109, 245, 0.8);
+  padding: 1rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 1.5rem;
+}
+
+@media (min-width: 300px) {
+  .container {
+    margin: 2vh;
+    padding: 2rem;
+    border-radius: 2rem;
+  }
+}
+
+.avatar {
+  display: block;
+
+  width: 112px;
+  height: auto;
+  margin: 0 1em 1em 0;
+  border-radius: 50%;
+}
+
+@media (min-width: 380px) {
+  .avatar {
+    float: left;
+  }
+}
+
+.titlulPaginii {
+  display: block;
+  font-size: clamp(2rem, 6vw, 4rem);
+  line-height: 1em;
+  margin: 0;
+}
+
+main {
+  clear: both;
+}
+
+.listaLinkuri {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #fff;
+}
+.listaItem {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #fff;
+}
+.listaLink {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.listaLink:hover {
+  background: #fff;
+  color: black;
+}
+.listaTitlu,
+.listaText {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+.listaText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.descrierePrincipala {
+  display: block;
+  margin: 0.5em 0 1.5em;
+}
+
+@media (min-width: 1800px) {
+  .listaLinkuri {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    margin: 7vw;
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .descrierePrincipala {
+    margin-bottom: 0.5em;
+  }
+}
+
+@media (min-width: 930px) {
+  .avatar {
+    width: clamp(130px, 14vw, 12rem);
+  }
+}
